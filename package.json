@@ -19,6 +19,12 @@
   },
   "homepage": "https://github.com/Juanor90/seminario-products#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.7"
   }
 }
