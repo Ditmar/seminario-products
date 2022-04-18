@@ -476,17 +476,3 @@ footer .social-icons a {
 }
 
 
-input.form-control {
-    border-color: transparent;
-    height: 44px;
-}
-
-.form-control {
-    background-color: rgba(0, 0, 0, 0.04);
-    border-color: rgba(0, 0, 0, 0.04);;
-}
-
-.form-control:focus {
-    box-shadow: none;
-    border-color: var(--brand);
-}

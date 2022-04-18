@@ -1,12 +1,23 @@
 import express from 'express';
 import dotenv from "dotenv";
 import fs from "fs";
-import css from "./public/assets/css"
+import path from "path";
 dotenv.config();
 const app = express();
 //rutas
+//static files changes images
+app.get(/\/assets\/[.*\/]*.+(css|scss|js|jpeg|png|jpg)/i, (request, response) => {
+    try {
+
+        let  absolutePath = path.resolve('./public' + request.url);
+        response.status(200).sendFile(absolutePath);
+    } catch (err) {
+        throw 'Error ' + err;
+    }
+
+});
 app.get('/', (resquest, response) => {
-    const htmlTemplate = fs.readFileSync("/public/index.html");
+    const htmlTemplate = fs.readFileSync("./public/index.html");
     let htmlString = htmlTemplate.toString();
     response.status(200).send(`${htmlString}`);
 });
