@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 //rutas
 //static files changes images
-app.get(/\/assets\/[.*\/]*.+(css|scss|js|jpeg|png)/i, (request, response) => {
+app.get(/\/assets\/[.*\/]*.+(css|scss|js|jpeg|png|jpg|webp|svg)/i, (request, response) => {
     try {
 
         let  absolutePath = path.resolve('./public' + request.url);
@@ -36,8 +36,8 @@ app.get('/addproducts', (resquest, response) => {
     response.status(200).send(`${htmlString}`);
 });
 
-app.get('/aboutus', (resquest, response) => {
-    const htmlTemplate = fs.readFileSync("./public/aboutus.html");
+app.get('/about', (resquest, response) => {
+    const htmlTemplate = fs.readFileSync("./public/about.html");
     let htmlString = htmlTemplate.toString();
     response.status(200).send(`${htmlString}`);
 });
