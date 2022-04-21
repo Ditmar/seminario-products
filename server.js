@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 //rutas
 //static files changes images
-app.get(/\/assets\/[.*\/]*.+(css|scss|js|jpeg|png)/i, (request, response) => {
+app.get(/\/assets\/[.*\/]*.+(css|scss|js|jpeg|png|svg)/i, (request, response) => {
     try {
 
         let  absolutePath = path.resolve('./public' + request.url);
