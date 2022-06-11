@@ -47,6 +47,11 @@ app.get('/login', (resquest, response) => {
     let htmlString = htmlTemplate.toString();
     response.status(200).send(`${htmlString}`);
 });
+app.get('/navegation', (resquest, response) => {
+    const htmlTemplate = fs.readFileSync("./public/navegation.html");
+    let htmlString = htmlTemplate.toString();
+    response.status(200).send(`${htmlString}`);
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
