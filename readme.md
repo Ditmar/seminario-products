@@ -6,8 +6,10 @@
 
 # List of task
 
-1. Feature WEBSITES-1001, create the navigation system. Please see the figma
-   1. Feature WEBSITES-1001, create the navigation system. Please see the figma
+ 1. Feature WEBSITES-1001, create the navigation system. Please see the figma
+
+   [Figma file desing](https://www.figma.com/file/kO8cve5xeJN6YHvywIUb6u/Untitled?node-id=0%3A1)
+
 
 ## Sample Image [desktop]
 
@@ -17,3 +19,5 @@ Check the code for the feature to do the changes, all changes will be passed to 
 If you work alone, you need to create a branch with you username example, in my case, my user name is Ditmar
 then, I choose the feature WEBSITES-1001, so the name of the branch I will need to create should be WEBSITES-1001-ditmar.
 If you work in a group, you have to do a similar task with the name of the group
+If you work in a group, you have to do a similar task with the name of the group.
+
